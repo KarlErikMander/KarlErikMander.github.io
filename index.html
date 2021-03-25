@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section id="section1">
+            <h3>1. osa: Kell</h3>
+            <div id="clock"></div>
+        </section>
+        <hr>
+        <section id="section2">
+            <h3>2. osa: Vormid</h3>
+            <form id="form">
+                <!-- input field --->
+                <div id="input-fields">
+                    <div id="first-name">
+                        <label for="fname">Eesnimi:</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                    <div id="last-name">
+                        <label for="lname">Perekonnanimi:</label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                </div>
+                <!-- checkbox --->
+                <div id="form-checkbox">
+                    <div class="box">
+                        <input type="checkbox" id="v1" name="v1" value="present">
+                        <label for="vehicle1"> See on kingitus</label> <!-- 5€ --->
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" id="v2" name="v2" value="contactless">
+                        <label for="vehicle2"> Soovin kontaktivaba tarnet</label> <!-- 1€ --->
+                    </div>
+                </div>
+                <!-- Radiobuttons  --->
+                <div id="chooseTransportCityContainer">  
+                    <h1>Tarne võimalused:</h1>
+                    <input type="radio" id="Tallinn" name="linnad" value="Tallinn">
+                    <label for="Tallinn">Tallinn 0€ </label><br>
+    
+                    <input type="radio" id="Tartu" name="linnad" value="Tartu">
+                    <label for="Tartu">Tartu 2.5€</label><br>
+    
+                    <input type="radio" id="Pärnu" name="linnad" value="Pärnu">
+                    <label for="Pärnu">Pärnu 3€</label><br>
+    
+                    <input type="radio" id="Narva" name="linnad" value="Narva">
+                    <label for="Narva">Narva 2.5€</label><br>
+                </div>
+            
+                
+                <div id="calc">
+                    <input type="submit" value="Arvuta tarne hind:" id="btn-delivery">
+                </div>
+                <div id="delivery"></div>
+            </form>
+        </section>
+        <hr>
+        <section id="section3">
+            <h3>3. osa: Kaart</h3>
+            <div id="map"></div>
+        </section>
+    </main>
+    <script type='text/javascript' src="script.js"></script>
+    <script type='text/javascript'
+        src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[AqLLRE37SJGqIxXEYxezPUa6fF2oCzl3cvG4n05FtFIVBrotBYxchpMYYpwuxBak]'
+        async defer></script>
+</body>
+
+</html>
